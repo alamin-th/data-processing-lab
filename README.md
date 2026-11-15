@@ -78,8 +78,10 @@ Make sure `Cities.csv` and `Countries.csv` are in the same folder as
 python data_processing.py
 ```
 
-This executes the demo/test queries at the bottom of the file (filtering
-cities by country/temperature, aggregating temperatures, counting unique
-countries, and joining the `cities` and `countries` tables) and prints the
-results to the console. Compare the printed output against the expected
-results to confirm the implementation is correct.
+This executes the demo/test queries at the bottom of the file: filtering
+cities in Italy and computing their average temperature, filtering
+non-EU countries, counting countries with a coastline, joining the
+`cities` and `countries` tables on `country`, filtering the joined table
+for cold cities in non-EU countries, and computing min/max temperatures
+for EU cities without a coastline. Compare the printed output against the
+expected results to confirm the implementation is correct.
